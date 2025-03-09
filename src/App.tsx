@@ -5,10 +5,8 @@ import Loader from "./components/Loader";
 const App = () => {
  const {photos,setPage,loading} =  usePhotos()
  const scrollHandlerRef = useRef(false);
-  console.log(photos)
 
   useEffect(() => {
-
     function handleScroll() {
       const {scrollTop,clientHeight,scrollHeight} = document.documentElement
       const remaining = scrollHeight - (scrollTop + clientHeight)
